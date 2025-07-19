@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="icon" type="image/x-icon" href="/HW-2025-07-18/favicon-form.ico">
+    <style>
+        input, select, textarea {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        span {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+<h1>An amazing form</h1>
+<form action="https://www.tudy-kudy-potribno.com" method="POST">
+
+    <label for="fullName">Full Name:</label>
+    <input
+            id="fullName"
+            name="fullName"
+            required
+    />
+
+    <label for="email">Email:</label>
+    <input
+            id="email"
+            name="email"
+            type="email"
+            required
+    />
+
+    <label for="password">Password:</label>
+    <input
+            id="password"
+            name="password"
+            type="password"
+            required
+    />
+
+    <label for="age">Age:</label>
+    <input
+            id="age"
+            name="age"
+            type="number"
+            required
+    />
+
+    <label for="edob">Exact Date of Birth:</label>
+    <input
+            id="edob"
+            name="dob"
+            type="datetime-local"
+            required
+    />
+
+    <label for="gender">Gender:</label>
+    <span id="gender">
+
+        <input
+                id="male"
+                name="gender"
+                type="radio"
+        />
+        <label for="male">Male &ensp;</label>
+
+        <input
+                id="female"
+                name="gender"
+                type="radio"
+        />
+        <label for="female">Female &ensp;</label>
+
+        <input
+                id="other"
+                name="gender"
+                type="radio"
+        />
+        <label for="other">Other</label>
+    </span>
+
+    <label for="interests">Interests:</label>
+    <span id="interests">
+
+        <input
+            id="sport"
+            name="interests"
+            type="checkbox"
+        />
+        <label for="sport">Sport &ensp;</label>
+
+        <input
+            id="musik"
+            name="interests"
+            type="checkbox"
+        />
+        <label for="musik">Musik &ensp;</label>
+
+        <input
+            id="reading"
+            name="interests"
+            type="checkbox"
+        />
+        <label for="reading">Reading from console</label>
+    </span>
+
+    <label for="country">Country:</label>
+    <select
+            id="country"
+            name="country"
+            required
+    >
+        <option>Gotta pick something</option>
+        <option>Україна-ненька</option>
+        <option>Європка</option>
+        <option>Омерика</option>
+    </select>
+
+    <!-- Цей блок я добавив собі для шпаргалки -->
+    <label for="city">City (not necessarily):</label>
+    <input
+            id="city"
+            name="city"
+            list="cities"
+            placeholder="Cut to the chase &#8628;"
+    />
+    <datalist id="cities">
+        <option value="Berlin">
+        <option value="Leipzig">
+        <option value="Frankfurt-an-Main">
+        <option value="Munich">
+    </datalist>
+
+    <label for="bio">Short Bio:</label>
+    <textarea id="bio" name="bio"></textarea>
+
+    <input
+            name="userId"
+            type="hidden"
+            value="12345"
+    />
+
+    <span>
+        <button type="submit">Submit</button>&ensp;
+        <button type="reset">Reset</button>
+    </span>
+
+</form>
+<hr>
+<footer>
+    <p>&copy; 2025 Volodymyr Mishchuk. All rights reserved</p>
+</footer>
+</body>
+</html>
