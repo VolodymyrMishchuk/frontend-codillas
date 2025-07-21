@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    background-color: rgba(0, 49, 56, 0.3);
+}
+
+.header {
+    color: azure;
+    display: flex;
+    background-color: #083138;
+    padding: 5px;
+}
+
+.my-name {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    font-size: xx-large;
+    text-align: right;
+    flex: 1;
+}
+
+.media-main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#photo-main {
+    border-radius: 10px;
+}
+
+.contact-info-wrapper {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.contact-info {
+    align-items: center;
+    text-align: left;
+    font-size: small;
+    flex: 1;
+}
+
+#contact h2 {
+    margin-top: 15px;
+}
+
+#h2-top {
+    margin-top: 0px !important;
+}
+
+#contact p {
+    margin-bottom: 6px;
+    line-height: 1;
+}
+
+i.bi {
+    margin-right: 8px;
+}
+
+#empty {
+    opacity: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    min-height: 80px;
+    margin: 0 auto;
+    padding: 20px;
+    align-items: center;
+    background-color: #083138;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.nav-ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    text-align: center;
+    gap: 40px;
+}
+
+.nav-ul a {
+    color: azure;
+    text-decoration: none;
+}
+
+.figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: smaller;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: azure;
+    border-radius: 10px;
+    margin: 8px 20px;
+    padding: 20px;
+}
+
+section ul {
+    list-style-type: none;
+}
+
+table {
+    width: 1000px;
+}
+
+.td-1 {
+    width: 200px;
+    vertical-align: top;
+}
+
+.td-2 {
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    text-align: left;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: azure;
+    background-color: #083138;
+    min-height: 100px;
+    text-align: center;
+}
